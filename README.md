@@ -1,4 +1,4 @@
-![sipnplay-readme](sipnplay-readme.jpg)
+![sipnplay-readme](img-readme/sipnplay-readme.jpg)
 
 <br>
 
