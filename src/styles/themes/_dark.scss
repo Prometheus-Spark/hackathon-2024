@@ -1,7 +1,7 @@
 :root.dark-mode {
   // COLORS
 
-  --pr1: #219EBC;
+  --pr1: #219ebc;
   --pr2: #ffffff;
 
   --color-grey-0: #000000;
@@ -28,12 +28,12 @@
   --color-label: #e1e9e8;
   --color-input-text: #f3f9f9;
   --color-nav: rgba(33, 158, 188);
-  --gradient-text: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
+  --gradient-text: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
 
   // BUTTON
 
-  --pr-btn: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
-  --bg-button: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
+  --pr-btn: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
+  --bg-button: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
   --bg-switch: linear-gradient(90deg, #001516 0%, #023047 100%);
 
   // HOVER
@@ -44,4 +44,7 @@
 
   --shadow-card: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
   --shadow-question: 0px 2px 20px 0px rgba(255, 255, 255, 0.1);
+
+  //BACKGROUND
+  --calendar-item-bg: linear-gradient(225deg, #073133 0%, #051f20 100%);
 }
