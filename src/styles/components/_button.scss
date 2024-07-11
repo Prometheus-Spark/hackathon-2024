@@ -19,4 +19,24 @@
   @include respond(tablet) {
     margin: var(--margin-md) var(--margin-sm);
   }
+  &-tooltip {
+    @extend .button-link;
+    transition: all 0.2s;
+    padding: 16px;
+    border-radius: 50%;
+
+    @include respond(tablet) {
+      padding: 0;
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: var(--nav-button-hover);
+
+      @include respond(tablet) {
+        background-color: transparent;
+        color: var(--text);
+      }
+    }
+  }
 }

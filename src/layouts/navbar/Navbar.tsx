@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import useToggleMenu from "./hooks/useToggleMenu";
 import styles from "./navbar.module.scss";
 import Logo from "@assets/brand/sipnplay.svg?react";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 const NAV_LINKS = [
   { text: "Menu", to: "/menu" },
@@ -53,6 +54,9 @@ function Navbar() {
                     {btn.text}
                   </button>
                 ))}
+              </div>
+              <div className={styles["toggle-buttons"]}>
+                <DarkModeToggle />
               </div>
             </div>
           </nav>
