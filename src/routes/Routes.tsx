@@ -1,3 +1,4 @@
+import Layout from "@root/layouts/layout/Layout";
 import BoardGamesPage from "@root/pages/BoardGamesPage";
 import CalendarPage from "@root/pages/CalendarPage";
 import HomePage from "@root/pages/HomePage";
@@ -8,19 +9,35 @@ function Routes() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <HomePage />,
+      element: (
+        <Layout>
+          <HomePage />
+        </Layout>
+      ),
     },
     {
       path: "/menu",
-      element: <MenuPage />,
+      element: (
+        <Layout>
+          <MenuPage />
+        </Layout>
+      ),
     },
     {
       path: "/calendar",
-      element: <CalendarPage />,
+      element: (
+        <Layout>
+          <CalendarPage />
+        </Layout>
+      ),
     },
     {
       path: "/board-games",
-      element: <BoardGamesPage />,
+      element: (
+        <Layout>
+          <BoardGamesPage />,
+        </Layout>
+      ),
     },
   ]);
 
