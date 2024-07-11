@@ -1,8 +1,8 @@
 :root.light-mode {
   // COLORS
 
-  --pr1: #00bdbf;
-  --pr2: #00565a;
+  --pr1: #219EBC;
+  --pr2: #99A6F2;
 
   --color-grey-0: #fff;
   --color-grey-50: #f9fafb;
@@ -17,31 +17,26 @@
   --color-grey-900: #111827;
   --color-grey-1000: #000;
 
-  --gradient-1: #fff;
-  --gradient-2: #dff3f4;
+  --gradient-1: #FFB850;
+  --gradient-2: #FFF95B;
 
   // TEXT
 
-  --text: #004f53;
-  --text-light: #004f53;
+  --text: #023047;
+  --text-light: #023047;
   --font-weight: 500;
-<<<<<<< Updated upstream
+
   --color-label: #6b7a7b;
   --color-input-text: #004f53;
   --color-nav: rgba(0, 79, 83, 1);
   --gradient-text: linear-gradient(90deg, #009698 0%, #00bbbd 100%);
-=======
-  --color-label: #8ECAE6;
-  --color-input-text: #023047;
-  --color-nav: rgba(33, 158, 188);
-  --gradient-text: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
->>>>>>> Stashed changes
+
 
   // BUTTONS
 
-  --pr-btn: linear-gradient(90deg, #009698 0%, #00bbbd 100%);
+  --pr-btn: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
   --bg-button: rgba(255, 255, 255, 1);
-  --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #cdf1f1 100%);
+  --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #8ECAE6 100%);
 
   // HOVER
 
