@@ -1,8 +1,8 @@
 :root.light-mode {
   // COLORS
 
-  --pr1: #219EBC;
-  --pr2: #99A6F2;
+  --pr1: #219ebc;
+  --pr2: #99a6f2;
 
   --color-grey-0: #fff;
   --color-grey-50: #f9fafb;
@@ -17,8 +17,8 @@
   --color-grey-900: #111827;
   --color-grey-1000: #000;
 
-  --gradient-1: #FFB850;
-  --gradient-2: #FFF95B;
+  --gradient-1: #ffb850;
+  --gradient-2: #fff95b;
 
   // TEXT
 
@@ -31,12 +31,11 @@
   --color-nav: rgba(0, 79, 83, 1);
   --gradient-text: linear-gradient(90deg, #009698 0%, #00bbbd 100%);
 
-
   // BUTTONS
 
-  --pr-btn: linear-gradient(90deg, #219EBC 0%, #99A6F2 100%);
+  --pr-btn: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
   --bg-button: rgba(255, 255, 255, 1);
-  --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #8ECAE6 100%);
+  --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #8ecae6 100%);
 
   // HOVER
 
@@ -46,4 +45,8 @@
 
   --shadow-card: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
   --shadow-question: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+
+  // BACKGROUND
+
+  --calendar-item-bg: linear-gradient(225deg, #e5f7f8 0%, #e9feff 100%);
 }
