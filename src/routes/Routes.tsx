@@ -35,7 +35,7 @@ function Routes() {
       path: "/board-games",
       element: (
         <Layout>
-          <BoardGamesPage />,
+          <BoardGamesPage />
         </Layout>
       ),
     },
