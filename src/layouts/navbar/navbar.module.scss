@@ -136,10 +136,10 @@
 
 .nav-content {
   display: flex;
-  justify-content: space-between;
-  gap: var(--gap-md);
 
-  width: 40rem;
+  gap: var(--gap-hg);
+
+  width: 45rem;
 
   @include respond(tablet) {
     flex-direction: column;
@@ -165,4 +165,51 @@
       width: 100%;
     }
   }
+}
+
+.toggle-buttons {
+  .mobile-button-body {
+    display: none;
+  }
+  @include respond(tablet) {
+    .desktop-button {
+      display: none;
+    }
+
+    .mobile-button-body {
+      display: block;
+      position: relative;
+
+      width: 7.2rem;
+      height: 4rem;
+      padding: var(--padding-sm);
+      border-radius: 10rem;
+
+      background: var(--bg-switch);
+
+      transition: all 1s;
+
+      cursor: pointer;
+    }
+
+    .mobile-button {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+
+      background: var(--bg-button);
+    }
+    .button-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.animate {
+  transform: translateX(3.2rem);
 }

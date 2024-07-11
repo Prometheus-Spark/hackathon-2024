@@ -1,9 +1,12 @@
+import { DarkModeProvider } from "./context/DarkModeContext";
 import Routes from "./routes/Routes";
 
 function App() {
   return (
     <>
-      <Routes />
+      <DarkModeProvider>
+        <Routes />
+      </DarkModeProvider>
     </>
   );
 }
