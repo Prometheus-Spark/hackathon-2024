@@ -18,9 +18,27 @@ function Navbar() {
   return (
     <div className={styles["header-container"]}>
       <header className={styles["header"]}>
-        <Logo />
+        <Logo
+          className={styles["header-logo"]}
+          onClick={() => {
+            isMenuOpen && toggleMenu();
+            navigate("/");
+          }}
+        />
         <div>
-          <nav className={`${styles["nav"]}`}>
+          <div
+            className={`${styles["header-button"]} ${
+              navButton ? styles["header-toggle-animation"] : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            <label className={styles["header-icon"]} />
+          </div>
+          <nav
+            className={`${styles["nav"]} ${
+              isMenuOpen && styles["nav-is-open"]
+            }`}
+          >
             <div className={styles["nav-content"]}>
               <div className={styles["nav-buttons"]}>
                 {NAV_LINKS.map((btn, i) => (
