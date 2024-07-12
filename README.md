@@ -1,4 +1,4 @@
-![header-readme](img-readme/header-readme.jpg)
+![header-readme](img-readme/header-readme.png)
 
 <br>
 
@@ -111,17 +111,17 @@ Creating specific pages like the calendar and implementing board game functional
 Making the website more SEO-friendly improved visibility and search engine ranking, while addressing inconsistent naming conventions enhanced code readability and maintenance. Adding a footer and creating a user interface for the menu page contributed to a complete and user-friendly site. Finally, modifying the home page, adding default background colors, completing the menu, and incorporating chess pieces on the home screen rounded off the development process, resulting in a polished and engaging website.
 
 ## 🧠 Brainstorm Process
-![brainstorm1](img-readme/brainstorm1.jpg)
+![brainstorm1](img-readme/brainstorm1.png)
 
-![brainstorm2](img-readme/brainstorm2.jpg)
+![brainstorm2](img-readme/brainstorm2.png)
 
-![brainstorm3](img-readme/brainstorm3.jpg)
+![brainstorm3](img-readme/brainstorm3.png)
 
 ## 🙃 Before
-![before-sipnplay](img-readme/sipnplay-readme.jpg)
+![before-sipnplay](img-readme/before-sipnplay.png)
 
 ## 🙂 After
-![after-sipnplay](img-readme/sipnplay-readme.jpg)
+![after-sipnplay](img-readme/after-sipnplay.png)
 
 ## 👑 Challenges
 - Initial idea:
