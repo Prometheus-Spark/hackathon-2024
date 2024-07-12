@@ -139,8 +139,6 @@
 
   gap: var(--gap-hg);
 
-  width: 60rem;
-
   @include respond(tablet) {
     flex-direction: column;
     justify-content: space-between;

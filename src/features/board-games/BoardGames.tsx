@@ -43,6 +43,7 @@ function BoardGames() {
   return (
     <section className="section">
       <div className={styles["board-games-container"]}>
+        <h2 className="title">Board Games</h2>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         {currentGames.map((game, i) => (
           <BoardGameItem name={game.name} key={i} />

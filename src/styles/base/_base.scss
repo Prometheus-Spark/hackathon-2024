@@ -29,13 +29,11 @@ html {
 }
 .section-title {
   width: 100%;
-  margin-block: var(--margin-lg);
-  padding: var(--padding-hg);
 
   background: transparent;
 
   color: var(--text);
-  font-size: calc(var(--h2-size) - 4px);
+  font-size: var(--h2-size);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
   font-weight: 600;
   letter-spacing: 1.8px;
@@ -51,16 +49,26 @@ html {
     font-size: calc(var(--h2-size) - 10px);
     text-align: left;
   }
+}
 
-  &-bg-color {
-    @extend .section-title;
-    @include respond(phone) {
-      padding: 0;
-      margin-top: 60px;
-      margin-block: var(--margin-md);
+.section-text {
+  color: var(--text);
+  text-align: justify;
+  font-size: clamp(var(--p-size-sm), 3vw, var(--p-size-hg) - 2px);
+  font-style: normal;
+  font-weight: var(--font-weight);
+  line-height: normal;
+  margin-top: 2rem;
 
-      font-size: var(--p-size-xhg);
+  & {
+    @include respond(tablet-small) {
       text-align: left;
     }
   }
+}
+
+.title {
+  text-align: left;
+  font-size: var(--h2-size);
+  color: var(--pr1);
 }

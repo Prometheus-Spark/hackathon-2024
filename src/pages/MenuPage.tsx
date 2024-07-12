@@ -1,8 +1,11 @@
 import Menu from "@root/features/Menu/Menu";
-import React from "react";
 
 function MenuPage() {
-  return <Menu />;
+  return (
+    <div className="app-padding">
+      <Menu />
+    </div>
+  );
 }
 
 export default MenuPage;

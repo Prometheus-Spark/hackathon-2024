@@ -5,8 +5,10 @@ import { KingPiece } from "../models/KingPiece";
 import { KnightPiece } from "../models/KnightPiece";
 import { QueenPiece } from "../models/QueenPiece";
 import { RookPiece } from "../models/RookPiece";
+import { useNavigate } from "react-router-dom";
 
 function HomeInfo() {
+  const navigate = useNavigate();
   return (
     <section className={styles["section"]}>
       <div className={styles["home-container"]}>
@@ -28,9 +30,15 @@ function HomeInfo() {
         </div>
         <div className="home-content">
           <h2 className={styles["home-title"]}>
-            Discover the Ultimate Board Game Experience: 500+ Games!
+            <span className="section-title">
+              Discover the Ultimate Board Game Experience
+            </span>
           </h2>
-          <div className={styles["home-text"]}>
+          <h2 className={styles["home-title"]}>
+            {" "}
+            <span className="section-title">500+ Games</span>
+          </h2>
+          <div className="section-text">
             <p>
               Join us for an unforgettable board game adventure! Access our
               collection of over 500 games for just $10 per person for 3 hours
@@ -42,18 +50,27 @@ function HomeInfo() {
               for 3 hours of gameplay.
             </p>
           </div>
+          <button
+            className={styles["home-button"]}
+            onClick={() => navigate("/menu")}
+          >
+            Check menu
+          </button>
           <h4 className={styles["home-second-title"]}>New opening hours:</h4>
           <ul className={styles["home-list"]}>
-            <li className={styles["home-list-item"]}>Sunday: 10am-11pm</li>
-            <li className={styles["home-list-item"]}>Mon-Thurs: 11am-11pm</li>
-            <li className={styles["home-list-item"]}>Fri: 11am-midnight</li>
-            <li className={styles["home-list-item"]}>Sat: 10am-midnight</li>
+            <li className={styles["home-list-item"]}>
+              <span>Sunday</span>: 10am-11pm
+            </li>
+            <li className={styles["home-list-item"]}>
+              <span>Mon-Thurs</span>: 11am-11pm
+            </li>
+            <li className={styles["home-list-item"]}>
+              <span>Friday</span>: 11am-midnight
+            </li>
+            <li className={styles["home-list-item"]}>
+              <span>Saturday</span>: 10am-midnight
+            </li>
           </ul>
-          <div>
-            <span className={styles["home-footer"]}>
-              Our kitchen closes 2.5-3 hours before we close!
-            </span>
-          </div>
         </div>
         <div className={styles["right-column"]}>
           <Canvas className={styles["top-right canvas"]}>

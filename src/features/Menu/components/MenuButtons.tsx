@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MENU_BOBA,
   MENU_COFFEE,

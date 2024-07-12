@@ -1,6 +1,8 @@
+@import "@root/styles/abstracts/mixins";
 .section {
-  width: 100%;
+  width: 80%;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,13 +10,12 @@
 
 .home {
   &-container {
-    flex: 2;
     display: flex;
     flex-direction: row;
     gap: 3rem;
     align-items: center;
     color: var(--text);
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   &-title {
@@ -29,7 +30,9 @@
   &-second-title {
     font-size: var(--h4-size);
     text-align: left;
+    margin-bottom: 2rem;
   }
+
   &-list {
     display: flex;
     flex-direction: column;
@@ -39,11 +42,12 @@
 
     &-item {
       font-size: var(--p-size-sm);
+
+      span {
+        color: var(--pr1);
+        font-weight: 700;
+      }
     }
-  }
-  &-footer {
-    font-size: var(--p-size-sm);
-    text-align: left;
   }
 
   &-content {
@@ -58,18 +62,29 @@
 }
 
 .left-column {
+  position: absolute;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: clamp(0rem, 20vw, 25rem);
   height: 100dvh;
+  left: 0;
+  @include respond(desktop) {
+    display: none;
+  }
 }
 
 .right-column {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: clamp(0rem, 20vw, 25rem);
   height: 100dvh;
   justify-content: space-between;
+  right: 0;
+  @include respond(desktop) {
+    display: none;
+  }
 }
 
 .canvas {
@@ -79,4 +94,42 @@
   flex: 1;
 
   background-color: var(--bg-canvas);
+}
+
+.home-button {
+  margin-block: 3rem;
+  display: flex;
+  outline: none;
+  border: none;
+  padding: 1.6rem 3.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.2rem;
+  letter-spacing: 0.6px;
+  font-size: var(--p-size-hg);
+  font-weight: 700;
+  font-style: normal;
+  background: var(--pr-btn);
+  color: white;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  @include respond(tablet-small) {
+    border-radius: 2rem;
+    padding: 1.6rem 3.2rem;
+  }
+
+  @include respond(phone) {
+    font-size: var(--p-size-md);
+    border-radius: 1.8rem;
+    padding: 1.4rem 3.2rem;
+  }
+
+  @include respond(phone-small) {
+    width: 100%;
+  }
 }

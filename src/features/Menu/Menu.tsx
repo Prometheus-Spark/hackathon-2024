@@ -2,11 +2,13 @@ import { Canvas } from "@react-three/fiber";
 
 import style from "./menu.module.scss";
 import { Resize, Stage } from "@react-three/drei";
-import MenuItemList from "./components/MenuItemList";
+
 import { useState } from "react";
-import { MENU_COFFEE } from "./menuItems";
+
 import { CoffeeCup } from "./model/CoffeeCup";
 import { MenuItem } from "./menu.types";
+import { MENU_COFFEE } from "./menuItems";
+import MenuItemList from "./components/MenuItemList";
 
 function Menu() {
   const [activeMenu, setActiveMenu] = useState<MenuItem[]>(MENU_COFFEE);

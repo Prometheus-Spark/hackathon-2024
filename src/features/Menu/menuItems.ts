@@ -74,38 +74,38 @@ const MENU_SPECIALTY_DRINKS = [
 const MENU_BOBA = [
   {
     name: "The OG",
-    price: "Medium: $4.25, Large: $5.25, Hot: $5.25",
+    price: "Medium: $4.25 / Large: $5.25 / Hot: $5.25",
     info: "Classic milk tea",
   },
   {
     name: "Brown Sugar Boba",
-    price: "Medium: $4.75, Large: $5.75, Hot: $5.75",
+    price: "Medium: $4.75 / Large: $5.75 / Hot: $5.75",
     info: "Caffeine free",
   },
   {
     name: "Taro Boba Coconut Boba",
-    price: "Medium: $4.25, Large: $5.25, Hot: $5.25",
+    price: "Medium: $4.25 / Large: $5.25 / Hot: $5.25",
     info: "Caffeine free, dairy free",
   },
   {
     name: "Fruit Green/Black Tea",
-    price: "Medium: $4.25, Large: $5.25",
-    info: "Comes in a variety of flavors: mango/strawberry/passionfruit/peach/green apple/lychee/kiwi. Feel free to mix and match!",
+    price: "Medium: $4.25 / Large: $5.25",
+    info: "Comes in a variety of flavors: mango / strawberry / passionfruit / peach / green apple / lychee / kiwi. Feel free to mix and match!",
   },
   {
     name: "Fruit Black Tea",
-    price: "Medium: $4.25, Large: $5.25",
-    info: "Comes in the flavors: peach/strawberry. Feel free to mix and match!",
+    price: "Medium: $4.25 / Large: $5.25",
+    info: "Comes in the flavors: peach / strawberry. Feel free to mix and match!",
   },
   {
     name: "Jasmine Milk Tea | Wintermelon Milk Tea",
-    price: "Medium: $4.25, Large: $5.25, Hot: $5.25",
+    price: "Medium: $4.25 / Large: $5.25 / Hot: $5.25",
     info: "Dairy free",
   },
   {
     name: "Toppings",
     price: "+$0.50",
-    info: "Tapioca pearls, lychee jelly, mixed jelly, grass jelly, pop strawberry, pop passionfruit, mango stars",
+    info: "Tapioca pearls / lychee jelly / mixed jelly / grass jelly / pop strawberry / pop passionfruit / mango stars",
   },
 ];
 
