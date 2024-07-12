@@ -1,8 +1,13 @@
 import Home from "@root/features/home/Home";
-import React from "react";
 
 function HomePage() {
-	return <Home />;
+  return (
+    <div className="app-container">
+      <div className="app-padding">
+        <Home />
+      </div>
+    </div>
+  );
 }
 
 export default HomePage;

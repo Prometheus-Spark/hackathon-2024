@@ -1,1 +1,37 @@
+.home {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+    color: var(--text);
+    width: 80%;
+    margin: 0 auto;
+  }
+  &-title {
+    font-size: var(--h2-size);
+    text-align: start;
+  }
+  &-text {
+    text-align: left;
+    margin-top: 5rem;
+    font-size: var(--p-size-sm);
+  }
+  &-second-title {
+    font-size: var(--h4-size);
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    text-align: start;
 
+    &-item {
+      font-size: var(--p-size-sm);
+    }
+  }
+  &-footer {
+    font-size: var(--p-size-sm);
+  }
+}
