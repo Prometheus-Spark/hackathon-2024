@@ -27,8 +27,6 @@ function Navbar() {
 
   const { isDarkMode } = darkModeContext;
 
-  console.log(isDarkMode);
-
   const navigate = useNavigate();
   return (
     <div className={styles["header-container"]}>
