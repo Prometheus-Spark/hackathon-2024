@@ -34,15 +34,10 @@ function DarkModeToggle() {
       </div>
 
       <div className={`${styles["desktop-button"]}`}>
-        <a data-tooltip-id="tooltip-theme">
-          <button
-            className={`${"button-link-tooltip"}`}
-            onClick={toggleDarkMode}
-          >
-            {" "}
-            <Sun />
-          </button>
-        </a>
+        <button className={`${"button-link-tooltip"}`} onClick={toggleDarkMode}>
+          {" "}
+          <Sun />
+        </button>
       </div>
     </>
   );
