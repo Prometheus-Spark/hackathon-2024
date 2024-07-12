@@ -12,9 +12,6 @@
   text-align: left;
   border-radius: 2rem;
 
-  @include respond(phone) {
-  }
-
   &-flex {
     display: flex;
     flex-direction: column;
