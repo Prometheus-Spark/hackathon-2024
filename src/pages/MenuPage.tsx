@@ -1,7 +1,8 @@
+import Menu from "@root/features/Menu/Menu";
 import React from "react";
 
 function MenuPage() {
-  return <div>MenuPage</div>;
+	return <Menu />;
 }
 
 export default MenuPage;
