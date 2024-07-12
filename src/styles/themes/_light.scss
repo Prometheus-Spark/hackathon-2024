@@ -1,8 +1,8 @@
 :root.light-mode {
   // COLORS
 
-  --pr1: #219ebc;
-  --pr2: #99a6f2;
+  --pr1: #00bdbf;
+  --pr2: #00565a;
 
   --color-grey-0: #fff;
   --color-grey-50: #f9fafb;
@@ -17,8 +17,8 @@
   --color-grey-900: #111827;
   --color-grey-1000: #000;
 
-  --gradient-1: #ffb850;
-  --gradient-2: #fff95b;
+  --gradient-1: #fff;
+  --gradient-2: #dff3f4;
 
   // TEXT
 
@@ -27,13 +27,13 @@
   --font-weight: 500;
 
   --color-label: #6b7a7b;
-  --color-input-text: #004f53;
-  --color-nav: rgba(0, 79, 83, 1);
-  --gradient-text: linear-gradient(90deg, #009698 0%, #00bbbd 100%);
+  --color-input-text: #023047;
+  --color-nav: rgba(2, 48, 71);
+  --gradient-text: linear-gradient(90deg, ##219ebc 0%, #526ef2 100%);
 
   // BUTTONS
 
-  --pr-btn: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
+  --pr-btn: linear-gradient(90deg, #219ebc 0%, #526ef2 100%);
   --bg-button: rgba(255, 255, 255, 1);
   --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #8ecae6 100%);
 
@@ -48,7 +48,12 @@
 
   // BACKGROUND
 
-  --calendar-item-bg: linear-gradient(225deg, #e5f7f8 0%, #e9feff 100%);
+  --calendar-item-bg: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.7) 50.5%,
+    #fff 100%
+  );
   --input-bg: linear-gradient(
     90deg,
     rgba(0, 221, 223, 0.03) 0%,
