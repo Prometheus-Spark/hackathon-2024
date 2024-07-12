@@ -6,11 +6,10 @@ import { OrbitControls } from "@react-three/drei";
 
 function Menu() {
 	return (
-		<R3FCanvas>
-			<MenuTable
-				rotation-y={-Math.PI / 2}
-				scale={1}
-			/>
+		<R3FCanvas
+			fov={45}
+			position={[0, 2, 5]}>
+			<MenuTable rotation-y={-Math.PI / 2} />
 		</R3FCanvas>
 	);
 }
