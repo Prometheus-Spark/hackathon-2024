@@ -21,11 +21,10 @@
 ## 🗝️ Key Features
 - **Dark Mode**: Toggle between light and dark themes.
 - **Responsive Design**: Adapts to various screen sizes.
-- **Interactive 3D Models**: Embedded 3D models using Three.js.
+- **Interactive 3D Models**: 3D models created by the team and embedded using React-three/fiber a three.js framework.
 - **Search Functionality**: Search bar for finding board games.
 - **Calendar Integration**: Calendar to view upcoming events.
 - **Dynamic Pages**: Multiple dynamic pages (Home, Board Games, Calendar, Menu, Press).
-- **Assets**: All assets were created by the Team
 
 ## ⚔️ Technologies Used
 - SCSS
