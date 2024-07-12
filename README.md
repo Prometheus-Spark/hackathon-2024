@@ -124,13 +124,13 @@ Making the website more SEO-friendly improved visibility and search engine ranki
 ![after-sipnplay](img-readme/after-sipnplay.png)
 
 ## 👑 Challenges
-**- Initial idea:**
+- **Initial idea**:
 	A 3D tablet on a desk with a board game and the menu would "pop up" from the tablet and have interactive 3D items when you scroll through the menu.
 	A 3D notice board for the home page with post-its with main information like hours & location, how it works. 
     We're trying to work with warm colors like orange and yellow, but we couldn't find a color palette that the group liked.
 -  Some team members has limited knowledge with using typescript so we had to learn as we went along. We had Adrian help us whenever we felt stuck
   
-**- How we work on these challenges:**
+- **How we work on these challenges**:
     We used 3D models on the home page in a way that would attract attention, but that would work on desktops and look mobile-friendly too, as the bulletin board didn't work on Safari, we decided to go with another course of action, that was working with smaller pieces of 3D that would interact in a friendly when with mobile and desktop.
     We ended up doing the same for the menu, as the table with the tablet was causing incompatibility on the mobile device, and the focus was on creating an interface that operates on both the monitor and the mobile, we had to do some changes for the amount of 3D on the menu page.
     We ended up opting for a warm color, but towards pastel and clean.
