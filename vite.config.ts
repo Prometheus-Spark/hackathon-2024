@@ -3,14 +3,15 @@ import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
-  plugins: [svgr(), react()],
-  server: { host: true },
-  resolve: {
-    alias: {
-      "@root": "/src",
-      "@features": "/src/features",
-      "@assets": "/src/assets",
-      "@hooks": "/src/hooks",
-    },
-  },
+	plugins: [svgr(), react()],
+	assetsInclude: ["**/*.glb"],
+	server: { host: true },
+	resolve: {
+		alias: {
+			"@root": "/src",
+			"@features": "/src/features",
+			"@assets": "/src/assets",
+			"@hooks": "/src/hooks",
+		},
+	},
 });
