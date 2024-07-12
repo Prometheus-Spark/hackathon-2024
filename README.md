@@ -25,6 +25,7 @@
 - **Search Functionality**: Search bar for finding board games.
 - **Calendar Integration**: Calendar to view upcoming events.
 - **Dynamic Pages**: Multiple dynamic pages (Home, Board Games, Calendar, Menu, Press).
+- **Assets**: All assets were created by the Team
 
 ## ⚔️ Technologies Used
 - SCSS
