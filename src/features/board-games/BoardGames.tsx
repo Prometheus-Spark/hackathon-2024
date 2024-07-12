@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { filterDataByName } from "@root/utils/functions";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const GAMES_PER_PAGE = 6;
+const GAMES_PER_PAGE = 7;
 
 function BoardGames() {
   const [searchTerm, setSearchTerm] = useState("");

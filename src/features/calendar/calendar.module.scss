@@ -3,6 +3,7 @@
 .calendar-item-container {
   background: var(--calendar-item-bg);
   padding: var(--padding-hg);
+  box-shadow: var(--shadow-card);
 
   font-size: var(--p-size-md);
   max-width: 50rem;
@@ -15,12 +16,18 @@
   &-flex {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1rem;
   }
 
   &-date {
     display: flex;
     justify-content: space-between;
+    font-size: var(--p-size-sm);
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
   }
   &-text {
     display: flex;
@@ -46,6 +53,7 @@
 }
 
 .content {
+  font-size: var(--p-size-xsm);
   @include respond(tablet) {
     max-height: 0;
     opacity: 0;
@@ -76,7 +84,11 @@
 .line {
   width: 100%;
   height: 2px;
-  background-color: var(--text);
+  background-color: rgb(216, 216, 216);
 
-  margin-block: 1rem;
+  margin-block: 2rem;
+}
+
+.bold {
+  font-weight: 600;
 }
