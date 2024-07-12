@@ -1,4 +1,4 @@
-![sipnplay-readme](img-readme/sipnplay-readme.jpg)
+![header-readme](img-readme/header-readme.jpg)
 
 <br>
 
@@ -9,6 +9,9 @@
 - [## 🖥️ Installation](#️-installation)
 - [⚜ Usage](#-usage)
 - [🏰 Process](#-process)
+- [🧠 Brainstorm Process](#-brainstorm-process)
+- [🙃 Before](#-before)
+- [🙂 After](#-after)
 - [👑 Challenges](#-challenges)
 - [🎯 Future Plans](#-future-plans)
 - [📜 File Structure](#-file-structure)
@@ -107,6 +110,19 @@ Creating specific pages like the calendar and implementing board game functional
 
 Making the website more SEO-friendly improved visibility and search engine ranking, while addressing inconsistent naming conventions enhanced code readability and maintenance. Adding a footer and creating a user interface for the menu page contributed to a complete and user-friendly site. Finally, modifying the home page, adding default background colors, completing the menu, and incorporating chess pieces on the home screen rounded off the development process, resulting in a polished and engaging website.
 
+## 🧠 Brainstorm Process
+![brainstorm1](img-readme/brainstorm1.jpg)
+
+![brainstorm2](img-readme/brainstorm2.jpg)
+
+![brainstorm3](img-readme/brainstorm3.jpg)
+
+## 🙃 Before
+![before-sipnplay](img-readme/sipnplay-readme.jpg)
+
+## 🙂 After
+![after-sipnplay](img-readme/sipnplay-readme.jpg)
+
 ## 👑 Challenges
 - Initial idea:
 	A 3D tablet on a desk with a board game and the menu would "pop up" from the tablet and have interactive 3D items when you scroll through the menu.
@@ -145,7 +161,6 @@ For developers it always looks like something is missing or could be worked on m
 │   │       ├── sun-mobile.svg
 │   │       └── sun.svg
 │   ├── components/R3FCanvas
-│   │   ├── R3FCanvas.module.scss
 │   │   ├── R3FCanvas.tsx
 │   │   └── R3FCanvas.types.ts
 │   ├── context
@@ -165,17 +180,40 @@ For developers it always looks like something is missing or could be worked on m
 │   │   │   ├── Calendar.tsx
 │   │   │   └── Calendar.types.ts
 │   │   ├── Home
+│   │   │   ├── assets
+│   │   │   │   ├── KingPiece.glb
+│   │   │   │   ├── KnightPiece.glb
+│   │   │   │   ├── QueenPiece.glb
+│   │   │   │   └── RookPiece.glb
 │   │   │   ├── components
 │   │   │   │   └── HomeInfo.tsx
+│   │   │   ├── models
+│   │   │   │   ├── KingPiece.tsx
+│   │   │   │   ├── KingPiece.tsx
+│   │   │   │   ├── KnightPiece.tsx
+│   │   │   │   ├── QueenPiece.tsx
+│   │   │   │   └── RookPiece.tsx
 │   │   │   ├── home.module.scss
 │   │   │   └── Home.tsx
 │   │   └── Menu
 │   │       ├── assets
-│   │       │   └── CoffeeCup.glb
+│   │       │   ├── CoffeeCup.glb
+│   │       │   ├── Burher.glb
+│   │       │   ├── CoffeeCup.glb
+│   │       │   └── Fries.glb
+│   │       ├── components
+│   │       │   ├── MenuButtons.tsx
+│   │       │   ├── MenuItemInfo.tsx
+│   │       │   └── MenuItemList.tsx
 │   │       ├── model
-│   │       │   └── CoffeeCup.tsx
+│   │       │   ├── Boba.tsx
+│   │       │   ├── Burguer.tsx
+│   │       │   ├── CoffeeCup.tsx
+│   │       │   └── Fries.tsx
 │   │       ├── menu.module.scss
-│   │       └── Menu.tsx
+│   │       ├── Menu.tsx
+│   │       ├── menu.types.ts
+│   │       └── menuItems.ts
 │   ├── hooks
 │   │   └── useLocalStorageState.tsx
 │   ├── layouts
@@ -188,10 +226,10 @@ For developers it always looks like something is missing or could be worked on m
 │   │       ├── navbar
 │   │       │   └── components
 │   │       │       └── DarkModeToggle.tsx
-│   │       └── hooks
-│   │           ├── useToggleMenu.tsx
-│   │           ├── navbar.module.scss
-│   │           └── Navbar.tsx
+│   │       ├── hooks
+│   │       │   └── useToggleMenu.tsx
+│   │       ├── navbar.module.scss
+│   │       └── Navbar.tsx
 │   ├── pages
 │   │   ├── BoardGamesPage.tsx
 │   │   ├── CalendarPage.tsx
@@ -220,6 +258,7 @@ For developers it always looks like something is missing or could be worked on m
 │   │   ├── functions.ts
 │   │   └── functions.types.ts
 │   ├── App.tsx
+│   ├── declarations.d.ts
 │   ├── main.tsx
 │   └── vite-env.d.ts
 ├── .eslintrc.cjs
@@ -227,6 +266,7 @@ For developers it always looks like something is missing or could be worked on m
 ├── index.html
 ├── LICENSE
 ├── package-lock.json
+├── package.json
 ├── README.md
 ├── tsconfig.app.json
 ├── tsconfig.json
