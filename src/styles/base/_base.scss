@@ -6,7 +6,7 @@ html {
     var(--gradient-2) 50%,
     var(--gradient-1) 100%
   );
-  color: white;
+  color: var(--text);
 }
 .app-padding {
   padding: 0 clamp(22px, 5vw, var(--padding-xxhg));
