@@ -1,8 +1,8 @@
 :root.light-mode {
   // COLORS
 
-  --pr1: #00bdbf;
-  --pr2: #00565a;
+  --pr1: #94bc6c;
+  --pr2: #7ba650;
 
   --color-grey-0: #fff;
   --color-grey-50: #f9fafb;
@@ -17,19 +17,19 @@
   --color-grey-900: #111827;
   --color-grey-1000: #000;
 
-  --gradient-1: #fff;
-  --gradient-2: #dff3f4;
+  --gradient-1: #fffdfc;
+  --gradient-2: #fcf5f0;
 
   // TEXT
 
-  --text: #023047;
+  --text: #202020;
   --text-light: #023047;
   --font-weight: 500;
 
   --color-label: #6b7a7b;
   --color-input-text: #023047;
-  --color-nav: rgba(2, 48, 71);
-  --gradient-text: linear-gradient(90deg, ##219ebc 0%, #526ef2 100%);
+  --color-nav: #7ba650;
+  --gradient-text: linear-gradient(90deg, #7ba650 0%, #94bc6c 100%);
 
   // BUTTONS
 

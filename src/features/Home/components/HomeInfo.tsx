@@ -5,7 +5,9 @@ function HomeInfo() {
     <section className="section">
       <div className={styles["home-container"]}>
         <h2 className={styles["home-title"]}>
-          Discover the Ultimate Board Game Experience: 500+ Games!
+          <span className="gradient-text">
+            Discover the Ultimate Board Game Experience: 500+ Games!
+          </span>
         </h2>
         <div className={styles["home-text"]}>
           <p>
