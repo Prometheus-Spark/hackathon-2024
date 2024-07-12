@@ -95,17 +95,17 @@ npm run build
 The production-ready files will be generated in the `dist` directory.
 
 ## 🏰 Process
-Initially, we must implement foundational features (FF) and add calendar content to enhance user functionality. Ensuring compliance with licensing and updating the README.md file, alongside creating an image folder for documentation purposes, are crucial early steps. Next, installing and implementing SASS and a CSS reset helps in maintaining consistent and manageable styling throughout the project.
+Initially, we implemented foundational features (FF) and added calendar content to enhance user functionality. Ensuring compliance with licensing and updating the README.md file, alongside creating an image folder for documentation purposes, were the early steps. Next, installing and implementing SASS and a CSS reset helped maintain consistent and manageable styling throughout the project.
 
-The creation of the page layout sets the structural foundation, followed by implementing routes and pages to ensure seamless navigation. Developing the navbar and incorporating a responsive mixin allows for a dynamic and adaptable user interface. Establishing default sizes for padding, gaps, margins, and typography, as well as adding a default color scheme, lays the groundwork for a cohesive design.
+The creation of the page layout set the structural foundation, followed by implementing routes and pages to ensure seamless navigation. Developing the navbar and incorporating a responsive mixin allowed for a dynamic and adaptable user interface. Establishing default sizes for padding, gaps, margins, and typography, as well as adding a default color scheme, laid the groundwork for a cohesive design.
 
-Styling the navbar and creating a hook for the navbar buttons enhance interactivity and user experience. Adjusting the logo color to accommodate dark mode, and implementing dark mode itself, are essential for modern design standards. Organizing the folder structure keeps the project maintainable and scalable.
+Styling the navbar and creating a hook for the navbar buttons enhanced interactivity and user experience. Adjusting the logo color to accommodate dark mode, and implementing dark mode itself, were essential for modern design standards. Organizing the folder structure kept the project maintainable and scalable.
 
-Integrating dependencies such as React-three Fiber and Drei facilitates advanced 3D graphics capabilities, which is vital for the visual appeal of a board game store website. Fixing folder inconsistencies ensures a clean and organized codebase.
+Integrating dependencies such as React-three Fiber and Drei facilitated advanced 3D graphics capabilities, which were vital for the visual appeal of the board game store website. Fixing folder inconsistencies ensured a clean and organized codebase.
 
-Creating specific pages like the calendar and implementing board game functionalities enriches the site’s content. Developing the home screen and menu page, followed by extensive color modifications, helps in achieving the desired aesthetic.
+Creating specific pages like the calendar and implementing board game functionalities enriched the site’s content. Developing the home screen and menu page, followed by extensive color modifications, helped in achieving the desired aesthetic.
 
-Making the website more SEO-friendly improves visibility and search engine ranking, while addressing inconsistent naming conventions and enhances code readability and maintenance. Adding a footer and creating a user interface for the menu page contribute to a complete and user-friendly site. Finally, modifying the home page, adding default background colors, completing the menu, and incorporating chess pieces on the home screen round off the development process, resulting in a polished and engaging website.
+Making the website more SEO-friendly improved visibility and search engine ranking, while addressing inconsistent naming conventions enhanced code readability and maintenance. Adding a footer and creating a user interface for the menu page contributed to a complete and user-friendly site. Finally, modifying the home page, adding default background colors, completing the menu, and incorporating chess pieces on the home screen rounded off the development process, resulting in a polished and engaging website.
 
 ## 👑 Challenges
 - Initial idea:
@@ -113,12 +113,17 @@ Making the website more SEO-friendly improves visibility and search engine ranki
 	A 3D notice board for the home page with post-its with main information like hours & location, how it works. 
     We're trying to work with warm colors like orange and yellow, but we couldn't find a color palette that the group liked. 
 - How we work on these challenges:
-    We used 3D models on the home page in a way that would attract attention, but that would work on cell phone browsers, as the bulletin board didn't work on Safari.
-    We ended up doing the same for the menu, as the table with the tablet was causing incompatibility on the mobile device, and the focus was on creating an interface that operates on both the monitor and the mobile.
-    We ended up opting for a warm color, but towards pastel.
+    We used 3D models on the home page in a way that would attract attention, but that would work on desktops and look mobile-friendly too, as the bulletin board didn't work on Safari, we decided to go with another course of action, that was working with smaller pieces of 3D that would interact in a friendly when with mobile and desktop.
+    We ended up doing the same for the menu, as the table with the tablet was causing incompatibility on the mobile device, and the focus was on creating an interface that operates on both the monitor and the mobile, we had to do some changes for the amount of 3D on the menu page.
+    We ended up opting for a warm color, but towards pastel and clean. 
 
 ## 🎯 Future Plans
-- 
+- Work on the 3D menu interactivity, so that each dish and drink has a 3D model 
+- Make the calendar more interactive so new events are automatically inputted when a form is filled
+- Make the board games page more interactive so new games are automatically inputted when a form is filled
+- Do final touches on pieces of information that the company should have a say 
+
+For developers it always looks like something is missing or could be worked on more, especially doing a project like this in only 24 hours. So the future plans are things we know it looks amazing but could look even better.
 
 ## 📜 File Structure
 ```
