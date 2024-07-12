@@ -1,4 +1,6 @@
 export const MAX_CACHE_SIZE = 300;
+export const INSTAGRAM_LINK = "https://www.instagram.com/sipnplaynyc/?hl=en";
+export const FACEBOOK_LINK = "https://www.facebook.com/sipnplaynyc/";
 
 export const BOARD_GAMES = [
   { name: "13 Days" },
