@@ -43,7 +43,7 @@ export function Board(props: JSX.IntrinsicElements["group"]) {
         >
           <Html
             zIndexRange={[0, 0]}
-            className={style["red_div"]}
+            className={style["red-div"]}
             position={[1.2, 0, 0.2]}
             center
           >

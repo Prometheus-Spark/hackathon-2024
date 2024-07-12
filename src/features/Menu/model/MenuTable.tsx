@@ -10,131 +10,122 @@ import Table from "../assets/MenuTable.glb";
 import styles from "../table.module.scss";
 
 type GLTFResult = GLTF & {
-	nodes: {
-		Plane007_1: THREE.Mesh;
-		Plane007_2: THREE.Mesh;
-		Plane054: THREE.Mesh;
-		Plane054_1: THREE.Mesh;
-		Plane055: THREE.Mesh;
-		Plane055_1: THREE.Mesh;
-		Circle005: THREE.Mesh;
-		Plane002: THREE.Mesh;
-		TabletScreen: THREE.Mesh;
-	};
-	materials: {
-		DarkBrown: THREE.MeshStandardMaterial;
-		Black: THREE.MeshStandardMaterial;
-		white: THREE.MeshStandardMaterial;
-		["Material.004"]: THREE.MeshStandardMaterial;
-	};
+  nodes: {
+    Plane007_1: THREE.Mesh;
+    Plane007_2: THREE.Mesh;
+    Plane054: THREE.Mesh;
+    Plane054_1: THREE.Mesh;
+    Plane055: THREE.Mesh;
+    Plane055_1: THREE.Mesh;
+    Circle005: THREE.Mesh;
+    Plane002: THREE.Mesh;
+    TabletScreen: THREE.Mesh;
+  };
+  materials: {
+    DarkBrown: THREE.MeshStandardMaterial;
+    Black: THREE.MeshStandardMaterial;
+    white: THREE.MeshStandardMaterial;
+    ["Material.004"]: THREE.MeshStandardMaterial;
+  };
 };
 
 export function MenuTable(props: JSX.IntrinsicElements["group"]) {
-	const { nodes, materials } = useGLTF(Table) as GLTFResult;
-	return (
-		<group
-			{...props}
-			dispose={null}>
-			<group name='Scene'>
-				<group
-					name='Plane007'
-					position={[4.593, 3.939, -5.828]}>
-					<mesh
-						name='Plane007_1'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane007_1.geometry}
-						material={materials.DarkBrown}
-					/>
-					<mesh
-						name='Plane007_2'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane007_2.geometry}
-						material={materials.Black}
-					/>
-				</group>
-				<group
-					name='Empty'
-					position={[7.371, 6.095, -8.5]}
-				/>
-				<group
-					name='Plane001'
-					position={[1.828, 5.049, -4.008]}>
-					<mesh
-						name='Plane054'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane054.geometry}
-						material={materials.white}
-					/>
-					<mesh
-						name='Plane054_1'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane054_1.geometry}
-						material={materials.Black}
-					/>
-				</group>
-				<group
-					name='Plane003'
-					position={[1.952, 4.532, -9.616]}>
-					<mesh
-						name='Plane055'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane055.geometry}
-						material={materials.Black}
-					/>
-					<mesh
-						name='Plane055_1'
-						castShadow
-						receiveShadow
-						geometry={nodes.Plane055_1.geometry}
-						material={materials["Material.004"]}
-					/>
-				</group>
-				<mesh
-					name='Circle005'
-					castShadow
-					receiveShadow
-					geometry={nodes.Circle005.geometry}
-					material={materials.white}
-					position={[7.371, 4.49, -8.5]}
-				/>
-				<mesh
-					name='Plane002'
-					castShadow
-					receiveShadow
-					geometry={nodes.Plane002.geometry}
-					material={materials.Black}
-					position={[7.197, 6.453, -1.668]}
-				/>
-				<mesh
-					name='TabletScreen'
-					castShadow
-					receiveShadow
-					geometry={nodes.TabletScreen.geometry}
-					material={materials.Black}
-					position={[8.187, 7.151, -1.671]}>
-					<Html
-						zIndexRange={[0, 0]}
-						scale={0.3}
-						position={[0, 0.1, 0]}
-						rotation-x={-Math.PI / 2}
-						rotation-y={Math.PI / 2.8}
-						rotation-z={Math.PI / 2}
-						transform
-						className={styles["menu_screen_container"]}>
-						<div>
-							<h1>Menu</h1>
-							<p>Click on the menu items to view more information</p>
-						</div>
-					</Html>
-				</mesh>
-			</group>
-		</group>
-	);
+  const { nodes, materials } = useGLTF(Table) as GLTFResult;
+  return (
+    <group {...props} dispose={null}>
+      <group name="Scene">
+        <group name="Plane007" position={[4.593, 3.939, -5.828]}>
+          <mesh
+            name="Plane007_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane007_1.geometry}
+            material={materials.DarkBrown}
+          />
+          <mesh
+            name="Plane007_2"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane007_2.geometry}
+            material={materials.Black}
+          />
+        </group>
+        <group name="Empty" position={[7.371, 6.095, -8.5]} />
+        <group name="Plane001" position={[1.828, 5.049, -4.008]}>
+          <mesh
+            name="Plane054"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane054.geometry}
+            material={materials.white}
+          />
+          <mesh
+            name="Plane054_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane054_1.geometry}
+            material={materials.Black}
+          />
+        </group>
+        <group name="Plane003" position={[1.952, 4.532, -9.616]}>
+          <mesh
+            name="Plane055"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane055.geometry}
+            material={materials.Black}
+          />
+          <mesh
+            name="Plane055_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane055_1.geometry}
+            material={materials["Material.004"]}
+          />
+        </group>
+        <mesh
+          name="Circle005"
+          castShadow
+          receiveShadow
+          geometry={nodes.Circle005.geometry}
+          material={materials.white}
+          position={[7.371, 4.49, -8.5]}
+        />
+        <mesh
+          name="Plane002"
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002.geometry}
+          material={materials.Black}
+          position={[7.197, 6.453, -1.668]}
+        />
+        <mesh
+          name="TabletScreen"
+          castShadow
+          receiveShadow
+          geometry={nodes.TabletScreen.geometry}
+          material={materials.Black}
+          position={[8.187, 7.151, -1.671]}
+        >
+          <Html
+            zIndexRange={[0, 0]}
+            scale={0.3}
+            position={[0, 0.1, 0]}
+            rotation-x={-Math.PI / 2}
+            rotation-y={Math.PI / 2.8}
+            rotation-z={Math.PI / 2}
+            transform
+            className={styles["menu-screen-container"]}
+          >
+            <div>
+              <h1>Menu</h1>
+              <p>Click on the menu items to view more information</p>
+            </div>
+          </Html>
+        </mesh>
+      </group>
+    </group>
+  );
 }
 
 useGLTF.preload(Table);
