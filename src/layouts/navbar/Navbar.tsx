@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import useToggleMenu from "./hooks/useToggleMenu";
 import styles from "./navbar.module.scss";
 import Logo from "@assets/brand/sipnplay.svg?react";
@@ -18,8 +18,11 @@ const NAV_LINKS = [
 
 function Navbar() {
   const { isMenuOpen, navButton, toggleMenu } = useToggleMenu();
-
   const darkModeContext = useDarkMode();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  console.log(location);
 
   if (!darkModeContext) {
     return null;
@@ -27,7 +30,6 @@ function Navbar() {
 
   const { isDarkMode } = darkModeContext;
 
-  const navigate = useNavigate();
   return (
     <div className={styles["header-container"]}>
       <header className={styles["header"]}>
@@ -67,7 +69,9 @@ function Navbar() {
               <div className={styles["nav-buttons"]}>
                 {NAV_LINKS.map((btn, i) => (
                   <button
-                    className="button-link"
+                    className={`button-link ${
+                      location.pathname === btn.to ? "active" : ""
+                    }`}
                     key={i}
                     onClick={() => {
                       isMenuOpen && toggleMenu();

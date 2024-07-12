@@ -18,8 +18,9 @@ function MenuItemList({
         setResizeFix={setResizeFix}
         resizeFix={resizeFix}
       />
-      {activeMenu?.map((item, i) => (
+      {activeMenu?.map((item) => (
         <MenuItemInfo
+          key={item.name}
           name={item.name}
           price={
             typeof item.price === "string" ? item.price : "Price not available"
