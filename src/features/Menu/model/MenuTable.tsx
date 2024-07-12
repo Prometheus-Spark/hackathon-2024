@@ -116,10 +116,11 @@ export function MenuTable(props: JSX.IntrinsicElements["group"]) {
 					receiveShadow
 					geometry={nodes.TabletScreen.geometry}
 					material={materials.Black}
-					position={[8, 6.8, -1.671]}>
+					position={[8.187, 7.151, -1.671]}>
 					<Html
+						zIndexRange={[0, 0]}
 						scale={0.3}
-						position={[0, 0.3, 0]}
+						position={[0, 0.1, 0]}
 						rotation-x={-Math.PI / 2}
 						rotation-y={Math.PI / 2.8}
 						rotation-z={Math.PI / 2}
