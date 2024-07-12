@@ -21,7 +21,7 @@ html {
 }
 .section {
   margin-bottom: var(--margin-md);
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   @include respond(tablet-small) {
     margin-bottom: 0;

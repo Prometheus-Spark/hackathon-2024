@@ -49,4 +49,9 @@
   // BACKGROUND
 
   --calendar-item-bg: linear-gradient(225deg, #e5f7f8 0%, #e9feff 100%);
+  --input-bg: linear-gradient(
+    90deg,
+    rgba(0, 221, 223, 0.03) 0%,
+    rgba(0, 165, 167, 0.03) 100%
+  );
 }
